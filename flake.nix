@@ -22,6 +22,7 @@
           go
           gopls
           gotools
+          go-tools
         ];
       in
       {
@@ -31,6 +32,7 @@
           src = ./.;
           vendorHash = null;
           nativeBuildInputs = packages;
+          subpackages = [ "cmd/server" "cmd/client" ];
         };
         devShells = {
           default = pkgs.mkShell {
