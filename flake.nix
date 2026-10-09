@@ -30,7 +30,7 @@
           version = "0.1.0";
           src = ./.;
           vendorHash = null;
-          nativeBuildInput = packages;
+          nativeBuildInputs = packages;
         };
         devShells = {
           default = pkgs.mkShell {
